@@ -1,0 +1,7 @@
+<div ng-controller="FundooCtrl">
+    Rating is {{rating}}
+    <br/>
+    <div fundoo-rating rating-value="rating" max="5" on-rating-selected="saveRatingToServer(rating)"></div>
+    <br/>
+	<span class="required-error" ng-show="field.field_required && !field.field_value">* required</span>
+</div>
